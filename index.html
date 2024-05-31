@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="path/to/icon-font-library.css">
+  <title>Free Palestine</title>
+</head>
+<body>
+  <header>
+    <div class="background-image">
+      <div class="centered-text">
+        <h1>Free Palestine</h1>
+      </div>
+      <p class="sub-text">Help through this way:</p>
+      <button class="donate-btn" onclick="openPopup()">Donate</button>
+      <div class="icons">
+        <i class="icon-home"></i>
+        <i class="icon-user"></i>
+      </div>
+    </div>
+  </header>
+
+  <div class="popup" id="donate-popup">
+    <span class="popup-close" onclick="closePopup()">&times;</span>
+    <h2>Donate</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="payment-method">Methods of Payment:</label>
+      <select id="payment-method" name="payment-method" required>
+        <option value="paypal">PayPal</option>
+        <option value="gcash">GCash</option>
+        <option value="maya">Maya</option>
+        <option value="debit-credit">Debit/Credit Card</option>
+      </select>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>ALL EYES ON RAFAH</p>
+  </div>
+  
+  <script src="java.js"></script>
+</body>
+</html>

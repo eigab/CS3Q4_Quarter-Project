@@ -1,0 +1,149 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: "Times New Roman", Times, serif;
+  }
+  header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+  }
+  .background-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('media/bg\ img.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .centered-text {
+    position: relative;
+    top: -10vh; 
+    text-transform: uppercase;
+    letter-spacing: 0.1em; 
+    width: 80%; 
+    margin: 0 auto; 
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif; 
+  }
+  .centered-text h1 {
+    font-size: 10vw; 
+    margin: 0;
+    transition: font-size 0.3s ease;
+    max-width: 90%; 
+    overflow-wrap: break-word; 
+  }
+  .sub-text {
+    font-size: 16px;
+    margin: 40px 0 10px;
+    font-family: Times New Roman, serif; 
+  }
+  .donate-btn {
+    padding: 8px 16px; 
+    font-size: 14px; 
+    font-family: Times New Roman, serif; 
+    letter-spacing: 0.1em; 
+    cursor: pointer;
+    border: 2px solid transparent; 
+    transition: border 0.3s ease, transform 0.3s ease; 
+    margin-bottom: 40px; 
+  }
+  .donate-btn:hover {
+    border: 2px solid black; 
+    transform: scale(0.95); 
+  }
+  .icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+    color: white; 
+    transition: color 0.3s ease;
+  }
+  .donate-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: black;
+  }
+  .footer {
+    background: url('https://www.aljazeera.com/wp-content/uploads/2022/11/SOR02157-1.jpg?resize=1170%2C780&quality=80');
+    background-color: #ab3c3c73;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .content {
+    width: 1024px;
+    height: 661px;
+    margin: 0 auto;
+    background: url('img'); 
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    z-index: 4;
+  }
+  /* Pop-up styles */
+  .popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 20px;
+    z-index: 1000;
+  }
+  .popup h2 {
+    margin-top: 0;
+  }
+  .popup form {
+    display: flex;
+    flex-direction: column;
+  }
+  .popup form label {
+    margin: 10px 0 5px;
+  }
+  .popup form input,
+  .popup form select {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .popup form button {
+    padding: 10px;
+    background-color: #ab3c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .popup form button:hover {
+    background-color: #911919;
+  }
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
